@@ -1,0 +1,285 @@
+.top ul li a {
+  text-decoration-line: none;
+  color: #3a3a3a;
+  font-weight: 400;
+}
+
+.top ul li a:hover {
+  color: rgb(218, 73, 73);
+}
+
+.top ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  margin-top: -7px;
+}
+
+.top {
+  text-align: center;
+}
+
+.image {
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
+  top: 1%;
+}
+
+.chat_box {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 85%;
+  width: 85%;
+  background-color: white;
+  left: 50%;
+  top: 52%;
+  box-shadow: grey 0px 0px 35px;
+  border-radius: 10px;
+}
+
+.name_box {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  
+  border-top-left-radius: 10px;
+  border-style: none;
+}
+
+.name {
+  position: absolute;
+  
+  left: 5%;
+  top: 35%;
+  
+ 
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+.logout {
+  float: right;
+  margin-right: 2%;
+  margin-top: 1%;
+  text-align: center;
+}
+.logout_button {
+  text-decoration-line: none;
+  color: red;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  box-shadow: red 0px 0px 7px;
+}
+
+.logout_button:hover {
+  box-shadow: red 0px 0px 11px;
+}
+.contact_box {
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  
+  top: 10%;
+  border-bottom-left-radius: 10px;
+  border-style: none;
+  overflow: auto;
+}
+
+.contact {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  height: 13%;
+  border-radius: 15px;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+}
+
+.contact_profile {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 40px;
+  height: 40px;
+  float: left;
+  overflow: auto;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2;
+}
+
+.right_chatbox {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  background-color:white;
+  width: 70%;
+  height: 70%;
+  overflow: auto;
+  border-bottom-right-radius: 10px;
+}
+
+.textbox {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  width: 67%;
+  height: 10%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.message_area {
+  width: 100%;
+  height: 80%;
+  border-style: dashed;
+  border-radius: 10px;
+}
+
+.sent_message {
+  border-style: none;
+  width: 99%;
+  height: 5%;
+  background-color: rgb(163, 163, 163);
+  padding: 0.1%;
+  margin-bottom: 0.5%;
+  border-radius: 10px;
+}
+.recieved_message {
+  border-style: none;
+  background-color: darkorange;
+  max-width: 99%;
+  height: 5%;
+  padding: 0.1%;
+  margin-bottom: 0.5%;
+  border-radius: 10px;
+}
+
+.new_icon {
+  float: right;
+  width: 10%;
+  height: 10%;
+  margin-top: 4%;
+  margin-right: 4%;
+}
+
+.new_chat_modal_class {
+  position: absolute;
+  width: 50%;
+  height: 35%;
+  background-color: cornflowerblue;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: linear 300ms;
+}
+
+.new_chat_modal_class:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.new_chat_modal_class a {
+  margin-right: 1%;
+  float: right;
+  margin-top: 0.5%;
+  text-decoration-line: none;
+  font-size: 150%;
+  font-family: cursive;
+}
+
+.new_chat_form {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40%;
+  height: 40%;
+}
+
+.newchattextarea {
+  width: 99%;
+  height: 50%;
+  border-style: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.newchatusername {
+  border-style: none;
+  border-radius: 15px;
+  outline: none;
+  height: 18%;
+}
+
+.sendcancel {
+  text-align: center;
+}
+
+.send {
+  border-style: none;
+  color: darkorange;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+}
+
+.cancel {
+  border-style: none;
+  color: red;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+}
+
+.contact_name{
+  text-decoration-line: none;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-variant: small-caps;
+  font-size: 120%;
+  
+}
+
+.contact_name:hover{
+  color:blue;
+}
+
+
+.chat_name_text{
+  text-decoration-line: none;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-variant: normal;
+  padding-left: 1.5%;
+  padding-top: 50%;
+
+}
+
+.text_message{
+  color:black;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-variant: normal;
+  font-size: 80%;
+  padding-left: 1.5%;
+}
+
+.marr{
+  margin-top: 1%;
+}

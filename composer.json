@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twig/twig": "1.13.*",
+        "nikic/php-parser": "^4.8"
+    }
+}

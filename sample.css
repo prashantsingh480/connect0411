@@ -1,0 +1,61 @@
+.right_chatbox{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    background-color: blue;
+    width: 70%;
+    height: 70%;
+    overflow: auto;
+    border-bottom-right-radius:10px ;
+}
+
+.textbox{
+    position: absolute;
+    top:80%;
+    left: 30%;
+    width: 67%;
+    height: 15%;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+.message_area{
+    width: 100%;
+    height: 100%;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+.sent_message{
+    border-style: solid;
+    width: 100%;
+    height: 5%;
+    background-color: brown;
+}
+.recieved_message{
+    border-style: solid;
+    background-color: darkorange;
+    width: 100%;
+    height: 5%;
+}
+
+
+
+<div class="right_chatbox">
+<div class="messages">
+    <div class="sent_message">
+        <a href="#">Me</a>
+        <p>sent message</p>
+    </div>
+    <div class="recieved_message">
+        <a href="#">user</a>
+        <p>recieved_message</p>
+    </div>
+
+
+</div>
+
+</div>
+<div class="textbox">
+<textarea class="message_area" placeholder="Write your message" name="my_message"></textarea>
+</div>
