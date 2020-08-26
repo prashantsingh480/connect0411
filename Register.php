@@ -19,7 +19,7 @@
         <div class="top">
             <ul class="icons">
 
-                <li class="whitetext"><a href="new.php">HOME</a></li>
+                <li class="whitetext"><a href="index.php">HOME</a></li>
                 <li class="whitetext"><a href="#">FAQs</a></li>
                 <li class="blacktext"><a href="#">ABOUT US</a></li>
                 <li class="blacktext"><a href="#">GET STARTED</a></li>

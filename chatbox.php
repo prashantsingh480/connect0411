@@ -15,7 +15,7 @@ ini_set('memcached.sess_sasl_password', getenv('4C84DD99E28CD60E4AB69E5ABDD18966
 if(isset($_SESSION['user_name'])){
     //hello
 }else{
-    header("location:new.php");
+    header("location:index.php");
 }
 
 ?>
