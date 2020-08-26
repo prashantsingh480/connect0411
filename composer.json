@@ -1,6 +1,7 @@
 {
+    "name": "connect0411/index.php",
+    "description": "A short description of what your package does",
     "require": {
-        "twig/twig": "1.13.*",
-        "nikic/php-parser": "^4.8"
+        "php": "^7.2"
     }
 }
