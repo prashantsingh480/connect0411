@@ -114,14 +114,10 @@
                     
                     <input type="submit" class="loginbutton" name="login" value="Login">
                 </form>
-                <?php
-                    session_start();
-                    require_once("connection.php ");
-                ?>
-                
+              
                 <?php
                 // login checking.
-
+                $con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
                 if(isset($_POST['login'])){
                     $user_name=$_POST['uname'];
                     $password=$_POST['passwo'];
