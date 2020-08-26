@@ -1,8 +1,4 @@
-<?php
-require_once("connection.php ");
-?>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -86,6 +82,9 @@ require_once("connection.php ");
         </p>
         
         </form>
+        <?php
+            require_once("connection.php ");
+        ?>
 
         <?php
 
