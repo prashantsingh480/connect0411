@@ -13,14 +13,20 @@ ini_set('memcached.sess_sasl_username', getenv('D76E0C'));
 ini_set('memcached.sess_sasl_password', getenv('4C84DD99E28CD60E4AB69E5ABDD18966'));
 ?>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#messages_box').load("messages.php");
+        setInterval(function(){
+            $('#messages_box').load("messages.php");
+        },1000)
+    })
+</script>
 
 <div class="right_chatbox" id ="right_chatbox">
 
      <div class="messages" id="messages_box"></div>
-     <?php 
-     require_once("messages.php");
-     ?>
+     
      </div>
             <form method="POST" id="message_form">
             <div class="textbox">
