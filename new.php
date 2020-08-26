@@ -114,6 +114,7 @@
 
                     <?php
                     // login checking.
+                    session_start();
                     ini_set('session.save_handler', 'memcached');
                     ini_set('session.save_path', getenv('mc4.dev.ec2.memcachier.com'));
                     if (version_compare(phpversion('memcached'), '3', '>=')) {
