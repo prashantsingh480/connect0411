@@ -1,16 +1,13 @@
-<?php
-session_start();
-require_once("connection.php ");
-?>
 
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:100,200,300,400,500,700"
         rel="stylesheet" />
 
@@ -117,6 +114,10 @@ require_once("connection.php ");
                     
                     <input type="submit" class="loginbutton" name="login" value="Login">
                 </form>
+                <?php
+                    session_start();
+                    require_once("connection.php ");
+                ?>
                 
                 <?php
                 // login checking.
