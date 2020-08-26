@@ -1,5 +1,3 @@
-
-
 <html>
 
 <head>
@@ -7,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:100,200,300,400,500,700"
-        rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:100,200,300,400,500,700" rel="stylesheet" />
 
 </head>
 
@@ -108,36 +105,45 @@
                     <form method="POST">
                         <input class="input" type="text" id="uname" name="uname" placeholder="Username" style="outline: none;"><br><br>
                         <input class="input" type="password" id="passwo" name="passwo" placeholder="Password" style="outline: none;">
-                    
+
                 </div>
                 <div class="loginbtn">
-                    
+
                     <input type="submit" class="loginbutton" name="login" value="Login">
-                </form>
-              
-                <?php
-                // login checking.
-                $con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
-                if(isset($_POST['login'])){
-                    $user_name=$_POST['uname'];
-                    $password=$_POST['passwo'];
-                    $q="SELECT * FROM `users` WHERE `user_name`='".$user_name."' AND `password`='".$password."'";
-                    $result=mysqli_query($con, $q);
-                    $count=mysqli_num_rows($result);
-                    if($count>0){
-                     //   $fullname=$firstname." ".$lastname;
-                        $_SESSION['user_name']=$user_name;
-                        header("location:chatbox.php");
+                    </form>
+
+                    <?php
+                    // login checking.
+                    ini_set('session.save_handler', 'memcached');
+                    ini_set('session.save_path', getenv('mc4.dev.ec2.memcachier.com'));
+                    if (version_compare(phpversion('memcached'), '3', '>=')) {
+                        ini_set('memcached.sess_persistent', 1);
+                        ini_set('memcached.sess_binary_protocol', 1);
+                    } else {
+                        ini_set('session.save_path', 'PERSISTENT=myapp_session ' . ini_get('session.save_path'));
+                        ini_set('memcached.sess_binary', 1);
                     }
-                    else{
-                        echo "invalid username or password."; // style echo
+                    ini_set('memcached.sess_sasl_username', getenv('D76E0C'));
+                    ini_set('memcached.sess_sasl_password', getenv('4C84DD99E28CD60E4AB69E5ABDD18966'));
+                    $con = mysqli_connect("sql12.freemysqlhosting.net:3306", "sql12362362", "6GtTPNlghQ", "sql12362362");
+                    if (isset($_POST['login'])) {
+                        $user_name = $_POST['uname'];
+                        $password = $_POST['passwo'];
+                        $q = "SELECT * FROM `users` WHERE `user_name`='" . $user_name . "' AND `password`='" . $password . "'";
+                        $result = mysqli_query($con, $q);
+                        $count = mysqli_num_rows($result);
+                        if ($count > 0) {
+                            //   $fullname=$firstname." ".$lastname;
+                            $_SESSION['user_name'] = $user_name;
+                            header("location:chatbox.php");
+                        } else {
+                            echo "invalid username or password."; // style echo
+                        }
                     }
 
-                }
 
 
-
-                ?>
+                    ?>
 
                 </div>
             </div>
