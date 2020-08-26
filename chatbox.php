@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['user_name'])){
     //hello
 }else{
-    
+    header("location:new.php");
 }
 
 ?>
