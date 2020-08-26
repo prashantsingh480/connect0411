@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-require_once("connection.php");
+$con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
 if(isset($_SESSION['user_name']) and isset($_GET['user'])){
 
     if(isset($_POST['text'])){

@@ -18,7 +18,7 @@
     <?php
 
     if(isset($_POST['send'])){
-        require_once("connection.php");
+        $con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
         $sender_name=$_SESSION['user_name'];
         $reciever_name=$_POST['user_name'];
         $message=$_POST['message'];

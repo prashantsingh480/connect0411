@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once("connection.php");
+$con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
 $q='SELECT DISTINCT `reciever_name`, `sender_name`
 FROM `messages` WHERE
 `sender_name`="'.$_SESSION['user_name'].'" OR

@@ -6,7 +6,7 @@
             </form>
             <?php
 if(isset($_POST['ssend'])){
-    require_once("connection.php");
+    $con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
     $sender_name=$_SESSION['user_name'];
     $reciever_name=$_GET['user'];
     $message=$_POST['my_message'];

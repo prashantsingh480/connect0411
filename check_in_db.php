@@ -1,6 +1,6 @@
 <?php
 
-require_once("connection.php");
+$con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
 
 if(isset($_POST['user'])){
     $q= 'SELECT * FROM `users` WHERE `user_name`= "'.$_POST['user'].'"';

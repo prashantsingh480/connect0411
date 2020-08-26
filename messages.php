@@ -2,7 +2,7 @@
 <?php
 
 
-            require_once('connection.php');
+$con = mysqli_connect("sql12.freemysqlhosting.net:3306" , "sql12362362", "6GtTPNlghQ", "sql12362362");
             $no_message=false;
             if(isset($_GET['user'])){
                 $_GET['user'] = $_GET['user'];
