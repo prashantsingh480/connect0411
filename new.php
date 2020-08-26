@@ -126,7 +126,7 @@
                     $count=mysqli_num_rows($result);
                     if($count>0){
                      //   $fullname=$firstname." ".$lastname;
-                        $_COOKIE['user_name']=$user_name;
+                        $_SESSION['user_name']=$user_name;
                         header("location:chatbox.php");
                     }
                     else{

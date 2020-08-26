@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_COOKIE['user_name'])){
+if(isset($_SESSION['user_name'])){
     //hello
 }else{
     header("location:new.php");
@@ -8,7 +8,7 @@ if(isset($_COOKIE['user_name'])){
 
 ?>
 
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -45,7 +45,7 @@ if(isset($_COOKIE['user_name'])){
         <div class="name_box">
             <div class="name">
                 <?php
-                echo $_COOKIE['user_name'];
+                echo $_SESSION['user_name'];
                 ?>
             </div>
             <div>
