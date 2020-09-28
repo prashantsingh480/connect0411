@@ -35,7 +35,7 @@
 
 
         <div class="login">
-            <a href="#login">Login</a>
+            <a href="#login_modal">Login</a>
         </div>
 
         <div class="tagline">
@@ -43,9 +43,6 @@
         </div>
         <div class="register">
             <p>Not yet Registered ? <a href="Register.php">Register.</a></p>
-        </div>
-        <div id="pp" class="modal">
-            <a class="close" href="#">&times;</a>abcd.
         </div>
         <div class="centrealign">
             <div class="centretagline">
@@ -97,7 +94,7 @@
                 <p class="contactus">CONTACT US : <a href="#">support@connect.com</a></p>
             </div>
         </div>
-        <div class="loginmain" id="login">
+        <div class="loginmain" id="login_modal">
             <div class="loginmodal">
                 <a href="#">&times;</a>
                 <p>LOGIN</p>
